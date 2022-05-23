@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description"
+    content="Reto del programa de Alura">
+ 
+  <link rel="icon" type="favicon/x-icon" href="imagenes/hangman.png">
+
+  
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <title>Juego Ahorcado</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="containerHeader">
+    <h1 class="titulo">Ahorcado <span><img id="rope"  src="imagenes/rope.png" alt=""></span></h1>
+    <h2 class="subtitulo">Oracle + <span>alura LATAM</span></h2>
+  </header>
+
+  <h3>... No pierdas la cabeza...</h3>
+  <section class="containerSection">
+  
+    <div class="containerApp">
+      <div>
+        <ul>
+          <li><b>Para un jugador,</b> iniciar juego directamente</li>
+          <li><b>Para dos jugadores,</b> agregar palabra y luego iniciar juego</li>
+          <li>Tienes solo <b>6 oportunidades</b></li>
+        </ul>
+      </div>
+      <a href="#pantalla">
+        <button id="iniciarJuego" class="trans">INICIAR JUEGO</button>
+      </a>
+      <input type="text" id="nuevaPalabra" placeholder="Escriba una nueva palabra">
+      <button id="agregarPalabra" class="trans">AGREGAR PALABRA</button>
+    </div>
+    
+    <div id="containerCanvas">
+      <canvas class="hidden" id="pantalla" width="960px" height="450px"></canvas>
+     
+      <button class="hidden trans" id="reiniciarJuego" type="reset" onclick="javascript:window.location.reload();">Volver a Jugar</button>
+    </div>
+  </section>
+
+  <footer class="containerFooter">
+    <a href="#input">
+      <h4>Ahorcado<span><img id="ropeFooter" src="imagenes/rope.png" alt=""></span></h4>
+    </a>
+    <div class="containerSocialMedia">
+      <a href="https://www.linkedin.com/in/marcelo.cordara/" target="_blank">
+        <img class="imgSocialMedia" src="imagenes/linkedin.svg" alt="logo de Linkedin">
+      </a>
+      <a href="https://github.com/" target="_blank">
+        <img class="imgSocialMedia" src="imagenes/github.svg" alt="logo de GitHub">
+      </a>
+    </div>
+    <div>
+      <h5>Programa ONE</h5>
+      <h5>Marcelo Cordara &copy; 2022</h5>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
